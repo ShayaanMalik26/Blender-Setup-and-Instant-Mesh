@@ -1,7 +1,6 @@
 
 
 Here's the complete README.md file in markdown format:
-![image](https://github.com/user-attachments/assets/1ebe6aea-f6af-4363-8193-21f9032f04a6)
 
 markdown
 Copy code
@@ -32,6 +31,14 @@ bash
 Copy code
 python /objaverse-xl/scripts/rendering/blender_python.py --directory /path/to/glb/files
 This script generates a separate folder for each .glb file, with images saved under the rendering_random_32views directory within each folder.
+
+### Structure 
+
+--input-dir
+---rendering_random_32views
+------rendered_image_folder
+-----------------rendered images(png and npy)
+
 
 ## 2. Generating Camera Angles
 After rendering the images, generate camera angles using:
