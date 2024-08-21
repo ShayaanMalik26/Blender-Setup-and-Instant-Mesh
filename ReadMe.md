@@ -24,7 +24,7 @@ Set the Environment Variable:
 Add the Blender directory to your system's PATH variable to run Blender from the command line.
 
 Running Scripts on Your GLB Folder
-1. Rendering GLB Files
+## 1. Rendering GLB Files
 To render images from .glb files, run the following script:
 
 bash
@@ -32,7 +32,7 @@ Copy code
 python /objaverse-xl/scripts/rendering/blender_python.py --directory /path/to/glb/files
 This script generates a separate folder for each .glb file, with images saved under the rendering_random_32views directory within each folder.
 
-2. Generating Camera Angles
+## 2. Generating Camera Angles
 After rendering the images, generate camera angles using:
 
 bash
@@ -40,14 +40,14 @@ Copy code
 python /extras/npz_generator.py --root_directory /path/to/rendering_random_32views
 This script creates camera angle files in each folder containing the rendered images.
 
-3. Generating Depth and Normal Files
+## 3. Generating Depth and Normal Files
 To generate depth and normal files, use:
 
 bash
 python /objaverse-xl/GeoWizard/geowizard/run_infer.py --input_dir "/path/to/root/directory" --pretrained_model_path "lemonaddie/geowizard" --domain "object"
 This will produce .depth and .normal files in the specified directory.
 
-4. Including Alpha Channels
+## 4. Including Alpha Channels
 To add alpha channels to your images, execute:
 
 bash
