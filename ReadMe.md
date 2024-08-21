@@ -34,10 +34,10 @@ This script generates a separate folder for each .glb file, with images saved un
 
 ### Structure 
 
---input-dir
+'''--input-dir
 ---rendering_random_32views
 ------rendered_image_folder
------------------rendered images(png and npy)
+-----------------rendered images(png and npy)'''
 
 
 ## 2. Generating Camera Angles
